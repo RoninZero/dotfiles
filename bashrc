@@ -1,3 +1,8 @@
+# set term type to 256 xterm
+export TERM=xterm-256color
+
+# setup solarized for terminal colors
+eval `dircolors ~/.dircolors`
 
 #####=====----- git-bash-prompt settings -----=====#####
 # some other config in .bashrc
