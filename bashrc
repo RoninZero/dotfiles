@@ -26,3 +26,6 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
 GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
 source ~/dotfiles/bash-git-prompt/gitprompt.sh
+
+# virtualenvwrapper source
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
