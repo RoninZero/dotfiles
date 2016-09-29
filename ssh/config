@@ -1,3 +1,6 @@
 Host *
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    ServerAliveInterval 10
     ControlMaster auto
     ControlPath ~/.ssh/master-%r@%h:%p.socket
