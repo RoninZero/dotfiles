@@ -1,2 +1,25 @@
 Will flesh out later.
 
+
+git clone https://github.com/RoninZero/dotfiles.git ~/dotfiles
+
+cd ~/dotfiles/
+git submodule init
+git submodule update
+
+mv ~/.bashrc ~/.bashrc.orig
+
+# make this a for loop moving all files to .orig
+if [ -f ~/.ssh/config ]; then
+  mv ~/.ssh/config ~/.ssh/config.orig
+fi
+
+cp ~/dotfiles/gitignore ~/.gitignore
+cp ~/dotfiles/gitconfig ~/.gitconfig
+cp ~/dotfiles/tmux.conf ~/.tmux.conf
+cp ~/dotfiles/inputrc ~/.inputrc
+
+cd ~
+#ln -s ~/dotfiles/bash-git-prompt .
+ln -s ~/dotfiles/dircolors ~/.dircolors
+
