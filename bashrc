@@ -1,3 +1,11 @@
+# source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# Uncomment the following if you don't like systemctl's auto-paging features
+# export SYSTEMD_PAGER=
+
 # set term type to 256 xterm
 export TERM=xterm-256color
 
@@ -28,4 +36,4 @@ GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
 source ~/dotfiles/bash-git-prompt/gitprompt.sh
 
 # virtualenvwrapper source
-source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+# source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
